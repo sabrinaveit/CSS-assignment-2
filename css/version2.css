@@ -21,7 +21,7 @@ img {
 }
 
 h2 {
-  text-align: center;
+  margin: 0;
 }
 
 header {
@@ -51,7 +51,10 @@ nav ul li {
 article {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: flex-start;
+  flex: 1 1 0;
+  justify-content: center;
   padding: 40px;
 }
 
@@ -69,13 +72,14 @@ footer p {
 
 section {
   max-width: 600px;
+  flex: 1 1;
 }
 
 .text {
-  background: #fff;
   font-size: 1.2rem;
   line-height: 1.5rem;
-  padding: 1rem 2rem
+  padding: 0 3rem;
+  margin-top: 0;
 }
 
 #cougar {
@@ -88,6 +92,7 @@ section {
 
 #tiger {
   background: #B26219;
+  color: #fff;
 }
 
 /* ----- SUGGESTED COLORS -----
